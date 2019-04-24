@@ -5,7 +5,7 @@ import glob
 import os
 import sys 
 
-def get_original_image_name(folderLocation=os.getcwd()+ r"\gtdb\\Files\\" ):
+def get_original_image_name("//give folderlocation //"):
     try:
         os.chdir(folderLocation)
         listOfFile = glob.glob(sys.argv[1])
@@ -17,7 +17,7 @@ def get_original_image_name(folderLocation=os.getcwd()+ r"\gtdb\\Files\\" ):
         print("got error")
         return []
 
-def get_gt_image_name(folderLocation=os.getcwd()+ r"\gtdb\\Files\\"  ):
+def get_gt_image_name(folderLocation=os.getcwd()+ r"\input files\\"  ):
     try:
         os.chdir(folderLocation)
         listOfFile = glob.glob(sys.argv[2])
